@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* |-| VARIABLES */
+:root {
+  /* Colors */
+  --dark-cyan: #119DA4;
+  --sunglow: #FFC857;
+  --space-cadet: #1F2041;
+  --charcoal: #174256;
+}
+
+/* |-| GENERIC STYLES */
+* {
+  box-sizing: border-box;
+}
+
+/* |-| HEADER */
+header {
+  background-color: var(--dark-cyan);
+  color: var(--space-cadet);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1.2rem 0;
+}
+
+.profile-picture {
+  box-shadow: 1px 1px 10px #000;
+}
+
+.menu-icon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: var(--space-cadet);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+/* |-| NAVIGATION */
+nav {
+  background-color: var(--sunglow);
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.8rem 0;
+  color: var(--charcoal);
+  transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.show {
+  display: flex;
+}
+
+.active {
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
+}
