@@ -9,7 +9,7 @@ const courses = [
       technology: [
           'Python'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
           'HTML',
           'CSS'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
       technology: [
           'Python'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
       technology: [
           'C#'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'WDD',
@@ -60,7 +60,7 @@ const courses = [
           'CSS',
           'JavaScript'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'WDD',
@@ -77,3 +77,42 @@ const courses = [
       completed: false
   }
 ];
+
+const getCSECourses = (courses) => {
+    return courses.filter(course => course.subject === 'CSE');
+};
+
+const getWDDCourses = (courses) => {
+    return courses.filter(course => course.subject === 'WDD');
+};
+
+// DOM elements.
+const courseFilters = document.getElementById('course-filters');
+const courseContainer = document.getElementById('courses');
+
+const renderHTML = (courses) => {
+    let html = '';
+    courses.forEach(course => {
+        const element = `<div class="course${course.completed ? '-completed' : '-not-completed'}">${course.subject} ${course.number}</div>`;
+        html += element;
+    });
+    courseContainer.innerHTML = html;
+};
+
+renderHTML(courses);
+
+courseFilters.addEventListener('click', (event) => {
+    const target = event.target;
+    event.preventDefault();
+    switch (target.textContent.toLowerCase()) {
+        case 'all':
+            renderHTML(courses);
+            break;
+        case 'cse':
+            renderHTML(getCSECourses(courses));
+            break;
+        case 'wdd':
+            renderHTML(getWDDCourses(courses));
+            break;
+    }
+});

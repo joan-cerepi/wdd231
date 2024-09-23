@@ -9,21 +9,24 @@
 
     <title>WDD 231 - Web Frontend Development I</title>
 
-    <!-- Favicon -->
-
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
     <!-- Scripts -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
   </head>
 
   <body>
     <header>
-      <img src="images/joan-mobile.webp" alt="Joan Cerepi's profile picture" class="profile-picture" width="100" height="133">
-      <h1>Joan Cerepi</h1>
+      <picture>
+        <source srcset="images/joan-md.webp" media="(min-width: 720px)">
+        <img src="images/joan-sm.webp" alt="Joan Cerepi's profile picture" class="profile-picture" width="100" height="133">
+      </picture>
+        <h1>Joan Cerepi</h1>
       <div class="menu-icon" id="menu-icon">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -50,15 +53,19 @@
       <section class="home-state">
         <h2>Pocatello, Idaho</h2>
         <figure>
-          <img src="#" alt="Image of Pocatello, Idaho" width="300" height="300" loading="lazy">
-          <figcaption></figcaption>
+          <img src="images/pocatello-pillars-sm.webp" alt="Image of Pocatello, Idaho pillars" width="320" height="243" loading="lazy">
+          <figcaption>Pillars in Pocatello, Idaho</figcaption>
         </figure>
       </section>
 
       <section class="certificate">
         <h2>Web and Computer Programming Certificate</h2>
-        <div class="course-filters"></div>
-        <div class="courses"></div>
+        <div class="course-filters" id="course-filters">
+          <a href="#">All</a>
+          <a href="#">CSE</a>
+          <a href="#">WDD</a>
+        </div>
+        <div class="courses" id="courses"></div>
       </section>
     </main>
 
@@ -66,7 +73,7 @@
       <p>
         &copy; <span id="currentYear"></span> - Joan Cerepi - Idaho, US
       </p>
-      <p id="lastModified"></p>
+      <p id="lastModified" class="lastModified"></p>
     </footer>
   </body>
 

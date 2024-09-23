@@ -1,12 +1,17 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* |-| VARIABLES */
 :root {
   /* Colors */
-  --dark-cyan: #119DA4;
   --sunglow: #FFC857;
-  --space-cadet: #1F2041;
   --charcoal: #174256;
+  --verdigris: #13ACB4;
+  --night: #0D0D0D;
+
+  /* Fonts */
+  --heading-font: Oswald, sans-serif;
+  --para-font: "Roboto Condensed", sans-serif;
 }
 
 /* |-| GENERIC STYLES */
@@ -14,10 +19,23 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: var(--para-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
 /* |-| HEADER */
 header {
-  background-color: var(--dark-cyan);
-  color: var(--space-cadet);
+  background-color: var(--verdigris);
+  color: var(--night);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -36,7 +54,7 @@ header {
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: var(--space-cadet);
+  background-color: var(--night);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -65,7 +83,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  padding: 0.8rem 0;
+  padding: 0.8rem;
   color: var(--charcoal);
   transition: 0.3s ease-in-out;
 }
@@ -75,7 +93,7 @@ nav a:hover {
   color: white;
 }
 
-.show {
+.show-nav {
   display: flex;
 }
 
@@ -84,4 +102,90 @@ nav a:hover {
   color: #fff;
   font-weight: 700;
   text-decoration: underline;
+}
+
+/* |-| MAIN */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 1.5rem;
+  text-align: center;
+}
+
+main section {
+  border-radius: 4px 4px 0 0;
+  box-shadow: 1px 1px 10px #000;
+}
+
+main section h2 {
+  background-color: var(--verdigris);
+  color: var(--night);
+  margin: 0;
+  padding: 1rem;
+}
+
+.course-filters {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #999999;
+}
+
+.course-filters a {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 0.5rem 3.5rem;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.course-filters a:hover {
+  background-color: var(--sunglow);
+  color: var(--charcoal);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.courses {
+  padding: 1rem;
+}
+
+.courses div {
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-radius: 4px;
+}
+
+.course-completed {
+  background-color: #006600;
+  color: white;
+
+}
+
+div.course-not-completed {
+  background-color: #AD0000;
+  color: #ffffff;
+}
+
+/* |-| FOOTER */
+footer {
+  background-color: var(--verdigris);
+  color: var(--night);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+}
+
+footer p {
+  margin: 0;
+  line-height: 2;
+  font-weight: 700;
+}
+
+.lastModified::before {
+  content: "Last Update: ";
 }

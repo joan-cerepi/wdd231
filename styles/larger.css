@@ -1,0 +1,64 @@
+@media screen and (min-width: 720px) {
+  /* |-| HEADER */
+  header {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .profile-picture {
+    width: 150px;
+    height: auto;
+  }
+
+  /* |-| NAVIGATION */
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav a {
+    padding: 0.8rem 2rem;
+  }
+
+  /* |-| MAIN  */
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .course-work {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .home-state {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .certificate {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+
+  .course-filters {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .courses {
+    display: flex;
+    gap: 0.3%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .courses div {
+    width: 33%;
+  }
+}
