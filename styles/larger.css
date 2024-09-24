@@ -3,6 +3,7 @@
   header {
     justify-content: center;
     gap: 2rem;
+    font-size: 1rem;
   }
 
   .menu-icon {
@@ -35,6 +36,11 @@
     grid-row: 1 / 2;
   }
 
+  .home-state img {
+    width: 320px;
+    height: auto;
+  }
+
   .home-state {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
@@ -48,6 +54,10 @@
   .course-filters {
     justify-content: center;
     gap: 1rem;
+  }
+
+  .course-filters a {
+    padding: 0.5rem 3.5rem;
   }
 
   .courses {
