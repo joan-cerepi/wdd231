@@ -71,4 +71,8 @@
   .courses div {
     width: 33%;
   }
+
+  div.credits {
+    width: 100%;
+  }
 }

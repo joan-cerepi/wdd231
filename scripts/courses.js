@@ -86,22 +86,20 @@ const getWDDCourses = (courses) => {
     return courses.filter(course => course.subject === 'WDD');
 };
 
-const displayCredits = (courses) => {
-    const certificateHeading = document.querySelector('.certificate-heading');
+const getCredits = (courses) => {
     const credits = courses.reduce(
         (accumulator, course) => accumulator + course.credits,
         0
     );
-    certificateHeading.innerHTML += ` <span class="credits">(${credits} total credits)</span>`;
+    return credits;
 };
-displayCredits(courses);
 
 // DOM elements.
 const courseFilters = document.getElementById('course-filters');
 const courseContainer = document.getElementById('courses');
 
 const renderHTML = (courses) => {
-    let html = '';
+    let html = `<div class="credits">Total Credits: ${getCredits(courses)}</div>`;
     courses.forEach(course => {
         const element = `<div class="course${course.completed ? '-completed' : '-not-completed'}">${course.subject} ${course.number}</div>`;
         html += element;
