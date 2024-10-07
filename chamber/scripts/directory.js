@@ -5,7 +5,7 @@ const displayMembers = (members) => {
   members.forEach(member => {
     html += `
     <section class="member">
-      <img src="${member.images.image}" alt="${member.name}">
+      <img src="${member.images.image}" alt="${member.name}" width="250" height="250" loading="lazy">
       <h2>${member.name}</h2>
       <p>${member.address}</p>
       <p>${member.phone}</p>
