@@ -1,0 +1,81 @@
+{
+  "members": [
+    {
+      "name": "Cosmic Currents",
+      "address": "12 Warp Drive, Intergalactic Quarter",
+      "phone": "(555) 045-9012",
+      "website": "https://cosmiccurrentstravel.com",
+      "images": {
+        "image": "images/cosmic-currents-md.webp",
+        "icon": ""
+      },
+      "membership": "1 (Member)"
+    },
+    {
+      "name": "Stellar Spa",
+      "address": "88 Luminous Lane, Nebula Heights",
+      "phone": "(555) 034-5678",
+      "website": "https://stellarsparadise.com",
+      "images": {
+        "image": "images/stellar-spa-md.webp",
+        "icon": ""
+      },
+      "membership": "3 (Gold)"
+    },
+    {
+      "name": "Warped Wonders",
+      "address": "7 Cosmic Crescent, Sector 9",
+      "phone": "(555) 022-8736",
+      "website": "https://warpedwonders.com",
+      "images": {
+        "image": "images/warped-wonders-md.webp",
+        "icon": ""
+      },
+      "membership": "2 (Silver)"
+    },
+    {
+      "name": "Solaris Souvenirs",
+      "address": "42 Celestial Way, Solaris Plaza",
+      "phone": "(555) 019-4234",
+      "website": "https://solarissouvenirs.com",
+      "images": {
+        "image": "images/solaris-souvenirs-md.webp",
+        "icon": ""
+      },
+      "membership": "1 (Member)"
+    },
+    {
+      "name": "Photon Fusion",
+      "address": "5 Energy Nexus, Quantum District",
+      "phone": "(555) 056-7890",
+      "website": "https://photonfusionenergy.com",
+      "images": {
+        "image": "images/photon-fusion-md.webp",
+        "icon": ""
+      },
+      "membership": "2 (Silver)"
+    },
+    {
+      "name": "Luminous Legacies",
+      "address": "19 Celestial Court, Galaxy Grove",
+      "phone": "(555) 078-3456",
+      "website": "https://luminouslegacies.com",
+      "images": {
+        "image": "images/luminous-legacies-md.webp",
+        "icon": ""
+      },
+      "membership": "3 (Gold)"
+    },
+    {
+      "name": "Nebula Navigators",
+      "address": "23 Voyager Street, Adventure Plaza",
+      "phone": "(555) 112-3456",
+      "website": "https://nebulanavigators.com",
+      "images": {
+        "image": "images/nebula-navigators-md.webp",
+        "icon": ""
+      },
+      "membership": "3 (Gold)"
+    }
+  ]
+}

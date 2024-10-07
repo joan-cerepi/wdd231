@@ -1,0 +1,40 @@
+@media screen and (min-width: 600px) {
+  .menu-icon {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    padding: 1rem 2rem;
+  }
+
+  /* |-| MAIN */
+  .show-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .show-grid .member {
+    width: 30%;
+  }
+
+  .show-list .member {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  footer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+}
