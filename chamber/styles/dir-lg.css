@@ -1,0 +1,17 @@
+@media screen and (min-width: 600px) {
+  /* |-| MAIN */
+  .show-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .show-grid .member {
+    width: 30%;
+  }
+
+  .show-list .member {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
