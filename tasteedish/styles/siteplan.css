@@ -1,0 +1,96 @@
+/* **************** VARIABLES ********************* */
+:root {
+  /* Fonts */
+  --heading-font: Ubuntu, sans-serif;
+  --para-font: Agdasima, sans-serif;
+
+  /* Colors */
+  --dark-moss-green: #485B29;
+  --earth-yellow: #F2A74B;
+  --black-bean: #301608;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+/* **************** GENERIC STYLES ********************* */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--para-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+/* **************** HEADER STYLES ********************* */
+header {
+  background-color: var(--dark-moss-green);
+  color: var(--white);
+  padding: 1.4rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* **************** MAIN STYLES ********************* */
+main {
+  width: 75%;
+  margin: 2rem auto;
+}
+
+main section h2 {
+  color: var(--earth-yellow);
+}
+
+main section p,
+main section ul {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.colors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.color {
+  padding: 2rem 4rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.dark-moss-green {
+  background-color: var(--dark-moss-green);
+}
+
+.earth-yellow {
+  background-color: var(--earth-yellow);
+}
+
+.black-bean {
+  background-color: var(--black-bean);
+}
+
+/* **************** FOOTER STYLES ********************* */
+footer {
+  background-color: var(--dark-moss-green);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
