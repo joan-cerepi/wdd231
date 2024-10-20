@@ -1,4 +1,9 @@
 @media screen and (min-width: 600px) {
+  .hero {
+    background-image: url('../images/hero.webp');
+    height: 350px;
+  }
+
   .ewf,
   .spotlights {
     grid-template-columns: 1fr 1fr 1fr;
