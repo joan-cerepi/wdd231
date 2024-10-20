@@ -40,6 +40,7 @@
     <script src="https://kit.fontawesome.com/f966058dfc.js" crossorigin="anonymous"></script>
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
   </head>
   <body>
     <header>
@@ -69,7 +70,24 @@
 
       <h1>Home</h1>
 
-      <div class="ewf"></div>
+      <div class="ewf">
+        <section class="events">
+          <h2>Events</h2>
+          <p>Tuesday 03:00 PM: Galactic Trade Summit (Location: Celestial Conference Center, Zeta Prime)</p>
+          <p>Thursday 12:45 PM: Future of Commerce (Virtual Event)</p>
+          <p>Friday 09:30 AM: Cosmic Career Fair (Location: The Recruiter's Hub, Nebula Station)</p>
+        </section>
+
+        <section class="weather" id="weather">
+          <h2>Weather</h2>
+        </section>
+
+        <section class="forecast" id="forecast">
+          <h2>Forecast</h2>
+        </section>
+      </div>
+
+      <div class="spotlights" id="spotlights"></div>
     </main>
 
     <footer>
