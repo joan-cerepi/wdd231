@@ -1,7 +1,7 @@
 const spotlights = document.getElementById('spotlights');
 
 const displaySpotlights = (members) => {
-  const goldMembers = members.filter(member => member.membership === "3 (Gold)");
+  const goldMembers = members.filter(member => member.membership === "3 (Gold)" || member.membership === "2 (Silver)");
   const randNumsPicked = [];
   let html = '';
   
