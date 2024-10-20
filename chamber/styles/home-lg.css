@@ -1,5 +1,6 @@
 @media screen and (min-width: 600px) {
-  .ewf {
+  .ewf,
+  .spotlights {
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 1.1rem;
   }
