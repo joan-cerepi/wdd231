@@ -1,3 +1,37 @@
+/* |-| KEYFRAMES */
+@keyframes fadeIn {
+  0% {
+    display: none;
+  }
+
+  20% {
+    display: block;
+    position: relative;
+    top: 4rem;
+    opacity: 0.2;
+  }
+
+  40% {
+    top: 3rem;
+    opacity: 0.4;
+  }
+
+  60% {
+    top: 2rem;
+    opacity: 0.6;
+  }
+
+  80% {
+    top: 1rem;
+    opacity: 0.8;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 /* |-| MAIN */
 main {
   display: grid;
@@ -82,6 +116,7 @@ label {
   margin: 2rem auto;
   border-radius: 5px;
   cursor: pointer;
+  animation: fadeIn 0.4s ease-in;
 }
 
 .donation-box,
@@ -89,4 +124,25 @@ label {
 .silver-spoon,
 .gold-medal {
   font-size: 2rem;
+  transition: 0.4s ease-in-out;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.gold-card:hover .gold-medal {
+  color: gold;
+}
+
+.silver-card:hover .silver-spoon {
+  color: silver;
+}
+
+.bronze-card:hover .lightning-bolt {
+  color: brown;
+}
+
+.non-profit-card:hover .donation-box {
+  color: #C76E00;
 }
