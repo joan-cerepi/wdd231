@@ -51,8 +51,8 @@ form {
   border-radius: 4px 35px 4px 20px;
 }
 
-h2 {
-  text-align: center;
+form h2 {
+  padding: 0.5rem 1.5rem;
 }
 
 label,
@@ -62,7 +62,7 @@ textarea {
 }
 
 label {
-  width: 65%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -100,12 +100,16 @@ label {
   transition: 0.5s ease-in-out;
   display: block;
   width: 50%;
-  margin: 2rem auto;
+  margin: 2rem 1.5rem;
 }
 
 .submit:active {
   position: relative;
   top: 6px;
+}
+
+.member-cards h2 {
+  text-align: center;
 }
 
 .card {
