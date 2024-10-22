@@ -33,7 +33,7 @@
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/join.css">
-    <!-- <link rel="stylesheet" href="styles/join-lg.css"> -->
+    <link rel="stylesheet" href="styles/join-lg.css">
     <link rel="stylesheet" href="styles/main-lg.css">
 
     <!-- Scripts -->
@@ -68,36 +68,68 @@
       <form method="get" action="thankyou.html">
         <h2>General Information</h2>
 
-        <label for="first-name">First Name <span class="required">*</span></label>
-        <input type="text" name="first-name" id="first-name" autocomplete="first-name" required>
+        <div class="general-info">
+          <label>First Name <span class="required">*</span>
+            <input type="text" name="first-name" title="First Name" size="40" autocomplete="given-name" required>
+          </label>
 
-        <label for="last-name">Last Name <span class="required">*</span></label>
-        <input type="text" name="last-name" id="last-name" autocomplete="last-name" required>
+          <label>Last Name <span class="required">*</span>
+            <input type="text" name="last-name" title="Last Name" size="40" autocomplete="family-name" required>
+          </label>
 
-        <label for="org-title">Organizational Title</label>
-        <input type="text" name="org-title" id="org-title" autocomplete="org-title">
+          <label>Organizational Title
+            <input type="text" name="org-title" title="Organizational Title" size="40" pattern="[a-zA-Z-\s]{7,}" autocomplete="organization-title">
+          </label>
 
-        <label for="email">Email <span class="required">*</span></label>
-        <input type="email" name="email" id="email" placeholder="example@email.com" autocomplete="email" required>
+          <label>Email <span class="required">*</span>
+            <input type="email" name="email" title="Email" size="40" placeholder="example@email.com" autocomplete="email" required>
+          </label>
 
-        <label for="phone">Phone <span class="required">*</span></label>
-        <input type="tel" name="phone" id="phone" autocomplete="phone" required>
+          <label>Phone <span class="required">*</span>
+            <input type="tel" name="phone" title="Phone Number" size="40" autocomplete="tel" required>
+          </label>
+        </div>
 
         <div class="membership">
           <h2>Membership Level</h2>
-          <input type="radio" name="membership" id="nonprofit"> <label for="nonprofit">Nonprofit (No fee)</label>
-          <input type="radio" name="membership" id="bronze"> <label for="bronze">Bronze</label>
-          <input type="radio" name="membership" id="silver"> <label for="silver">Silver</label>
-          <input type="radio" name="membership" id="gold"> <label for="gold">Gold</label>
+          <label><input type="radio" name="membership"> Nonprofit (No fee)</label>
+          <label><input type="radio" name="membership"> Bronze</label>
+          <label><input type="radio" name="membership"> Silver</label>
+          <label><input type="radio" name="membership"> Gold</label>
         </div>
 
-        <label for="description">Business/Organization's Description</label>
-        <textarea id="description" class="description" cols="50" rows="10" name="description"></textarea>
+        <label class="description-box">Business/Organization's Description
+          <textarea id="description" class="description" cols="40" rows="10" title="Organization's Description" name="description"></textarea>
+        </label>
 
         <input type="hidden" name="timestamp" id="timestamp">
 
-        <input type="submit" name="submit" id="submit" value="Become a member">
+        <input type="submit" name="submit" class="submit" id="submit" value="Become a member">
       </form>
+
+      <div class="member-cards">
+        <h2>Membership Levels</h2>
+
+        <section class="non-profit-card card">
+          <h3>Non Profit Membership Level</h3>
+          <i class="fa-solid fa-box donation-box"></i>
+        </section>
+
+        <section class="bronze-card card">
+          <h3>Bronze Membership Level</h3>
+          <i class="fa-solid fa-bolt lightning-bolt"></i>
+        </section>
+
+        <section class="silver-card card">
+          <h3>Silver Membership Level</h3>
+          <i class="fa-solid fa-spoon silver-spoon"></i>
+        </section>
+
+        <section class="gold-card card">
+          <h3>Gold Membership Level</h3>
+          <i class="fa-solid fa-medal gold-medal"></i>
+        </section>
+      </div>
     </main>
 
     <footer>

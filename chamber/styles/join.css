@@ -1,26 +1,92 @@
+/* |-| MAIN */
 main {
-  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  padding: 1rem 2rem;
 }
 
 form {
-  font-size: 1.2rem;
+  background-color: var(--peach);
+  color: var(--deep-blue);
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 4px 35px 4px 20px;
 }
 
-input,
-label {
+h2 {
+  text-align: center;
+}
+
+label,
+.general-info input,
+textarea {
   display: block;
-  margin: 0.5rem 0;
 }
 
-.membership > input,
-.membership > label {
-  display: inline;
+label {
+  width: 65%;
+  margin: 0 auto;
 }
 
-.membership > input {
-  margin-left: 1rem;
+.general-info {
+  line-height: 1.5;
 }
 
-label[for="description"] {
-  margin-top: 2rem;
+.general-info input {
+  min-height: 44px;
+  border-radius: 5px;
+}
+
+.required {
+  color: #FF0000;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+.membership {
+  line-height: 2;
+  margin-top: 2.5rem;
+}
+
+.description-box {
+  margin-top: 1.5rem;
+  line-height: 2;
+}
+
+.submit {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 3px 3px 20px gray;
+  transition: 0.5s ease-in-out;
+  display: block;
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.submit:active {
+  position: relative;
+  top: 6px;
+}
+
+.card {
+  text-align: center;
+  background-color: var(--peach);
+  width: 70%;
+  padding: 2.5rem 1rem;
+  margin: 2rem auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.donation-box,
+.lightning-bolt,
+.silver-spoon,
+.gold-medal {
+  font-size: 2rem;
 }
