@@ -19,4 +19,8 @@
   .submit {
     margin-left: 3.5rem;
   }
+
+  .membership-link {
+    width: 45%;
+  }
 }
