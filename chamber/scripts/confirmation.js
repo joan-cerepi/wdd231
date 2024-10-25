@@ -20,7 +20,7 @@ const displayUserData = () => {
     <p>First Name: ${user['first-name']}</p>
     <p>Last Name: ${user['last-name']}</p>
     <p>Email: ${decodeURIComponent(user['email'])}</p>
-    <p>Phone: ${user['phone']}</p>
+    <p>Phone: ${decodeURIComponent(user['phone'])}</p>
     <p>Organization Title: ${user['org-title']}</p>
     <p>Timestamp from Form: ${timestamp}</p>
   `;
