@@ -6,7 +6,7 @@ const getFormData = (link) => {
   dataArray.forEach(part => {
     const prop = part.split('=')[0];
     const value = part.split('=')[1];
-    userData[prop] = value;
+    userData[prop] = decodeURIComponent(value);
   });
   return userData;
 }
@@ -19,8 +19,8 @@ const displayUserData = () => {
     <h2>Submitted Data Review</h2>
     <p>First Name: ${user['first-name']}</p>
     <p>Last Name: ${user['last-name']}</p>
-    <p>Email: ${decodeURIComponent(user['email'])}</p>
-    <p>Phone: ${decodeURIComponent(user['phone'])}</p>
+    <p>Email: ${user['email']}</p>
+    <p>Phone: ${user['phone']}</p>
     <p>Business/Organization Name: ${user['organization']}</p>
     <p>Timestamp from Form: ${timestamp}</p>
   `;
