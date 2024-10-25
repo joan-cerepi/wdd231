@@ -1,3 +1,9 @@
 h1 {
   text-align: center;
 }
+
+.user-info {
+  width: 30%;
+  margin: 3rem auto;
+  font-size: 1.2rem;
+}
