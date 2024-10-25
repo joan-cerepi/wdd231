@@ -21,7 +21,7 @@ const displayUserData = () => {
     <p>Last Name: ${user['last-name']}</p>
     <p>Email: ${decodeURIComponent(user['email'])}</p>
     <p>Phone: ${decodeURIComponent(user['phone'])}</p>
-    <p>Organization Title: ${user['org-title']}</p>
+    <p>Business/Organization Name: ${user['organization']}</p>
     <p>Timestamp from Form: ${timestamp}</p>
   `;
 };
