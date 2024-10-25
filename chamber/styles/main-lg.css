@@ -21,4 +21,21 @@
     justify-content: space-evenly;
     text-align: left;
   }
+
+  /* ************************** HOME PAGE ************************** */
+  .hero {
+    background-image: url('../images/hero.webp');
+    height: 350px;
+  }
+
+  .ewf,
+  .spotlights {
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1.1rem;
+  }
+
+  .events p {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
