@@ -15,6 +15,7 @@
   --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
 
+/* ********************* GENERAL STYLING ********************* */
 body {
   margin: 0;
   padding: 0;
@@ -281,8 +282,9 @@ h6 {
   }
 }
 
-/* Mobile View Footer */
+/* Mobile View */
 @media only screen and (min-width: 0rem) {
+  /* FOOTER */
   #td-footer {
       padding: var(--sectionPadding);
       background-color: #1a1a1a;
@@ -392,11 +394,8 @@ h6 {
       width: auto;
       display: block;
   }
-}
 
-/* ******************************* HOME PAGE ******************************* */
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
+  /* ******************************* HOME PAGE ******************************* */
   #hero {
     padding: var(--sectionPadding);
     /* 100px - 120px */
@@ -563,11 +562,8 @@ h6 {
     left: 0;
     z-index: 1;
   }
-}
 
-/* ******************************* RECIPES PAGE ******************************* */
-/* Mobile */
-@media only screen and (min-width: 0rem) {
+  /* ******************************* RECIPES PAGE ******************************* */
   #recipes {
       padding: var(--sectionPadding);
       margin: 8rem 0;
@@ -648,10 +644,8 @@ h6 {
       margin: 0;
       color: var(--bodyTextColor);
   }
-}
 
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
+  /* ******************************* CONTACT PAGE ******************************* */
   #contact {
       padding: var(--sectionPadding);
       background-color: #f7f7f7;
