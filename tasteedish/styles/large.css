@@ -310,3 +310,40 @@
       align-self: stretch;
   }
 }
+
+
+/* ******************************* CONTACT PAGE ******************************* */
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #contact .td-container {
+      max-width: 80rem;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  #contact .td-content {
+      width: 47%;
+      /* prevents flexbox from squishing it */
+      flex: none;
+      /* sends it to the right in the 2nd position */
+      order: 2;
+  }
+  #contact .td-submit {
+      width: auto;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #contact .td-form {
+      width: 46%;
+      max-width: 36.125rem;
+  }
+  #contact .td-submit {
+      width: auto;
+  }
+}
+/* Large Desktop - 1500px */
+@media only screen and (min-width: 93.75rem) {
+  #contact .td-graphic {
+      display: block;
+  }
+}
