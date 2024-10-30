@@ -30,11 +30,11 @@ const showRecipes = async (path) => {
   try {
     if (!response.ok) throw new Error('There was an error receiving recipe data.');
     const recipeData = await response.json();
-    updateDOM(recipeData.hits);
+    return recipeData.hits;
   } catch (e) {
     console.log(e);
   }
 };
 
 // Exports
-export { showRecipes, getRandomCuisine };
+export { updateDOM, showRecipes, getRandomCuisine };
