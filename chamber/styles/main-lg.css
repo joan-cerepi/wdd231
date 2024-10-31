@@ -38,4 +38,33 @@
     width: 80%;
     margin: 0 auto;
   }
+
+  /* **************************** DISCOVER PAGE **************************** */
+  .discover-main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .discover-main h1 {
+    grid-column: 1 / 4;
+  }
+
+  .sidebar {
+    grid-column: 1 / 2;
+  }
+
+  .images {
+    grid-column: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .image {
+    width: 350px;
+    height: 350px;
+  }
+
+  .separator {
+    display: none;
+  }
 }

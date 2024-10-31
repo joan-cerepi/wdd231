@@ -219,3 +219,44 @@ footer p {
 .spotlights {
   margin-bottom: 1.5rem;
 }
+
+/* **************************** DISCOVER PAGE **************************** */
+/* |-| MAIN */
+.discover-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+  gap: 2rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.separator {
+  border: 3px groove lightgray;
+  width: 25rem;
+}
+
+.discover-main h1 {
+  text-align: left;
+}
+
+.sidebar section {
+  border: 2px solid lightgray;
+  box-shadow: 2px 3px 10px lightgray;
+}
+
+.image {
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+}
+
+.image:hover {
+  opacity: 0.7;
+}
